@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form id="formCadastro">
+        <!-- Dados Pessoais-->
+         <label>Nome:</label>
+         <input type="text" name="nome" required>
+         <label>Email:</label>
+         <input type="email" name="email" required>
+         <label>Senha:</label>
+         <input type="password" name="senha" required>
+         
+
+         <hr>
+
+         <!--CEP-->
+         <label>CEP:</label>
+         <input type="text" id="cep" placeholder="00000-000" maxlenght="9" required>
+
+         <!--Endereço-->
+         <label>Rua:</label>
+         <input type="text" name="rua" id="rua" required>
+        
+         <label>Bairro:</label>
+         <input type="text" name="bairro" id="bairro" required>
+
+         <label>Cidade:</label>
+         <input type="text" name="cidade" id="cidade" required>
+
+         <label>Estado:</label>
+         <input type="text" name="estado" id="estado" required>
+
+         <br><br>
+         <button type="submit">Cadastrar</button>
+    </form>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

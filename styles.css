@@ -1,0 +1,121 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url('new background 2.png');
+    background-size: cover;
+    background-size: auto 200%;
+    background-repeat: repeat-x;
+    background-position: 0% center;
+    animation: backgroundScroll 60s linear infinite;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+/* Animação para o background */
+
+@keyframes backgroundScroll{
+        from {
+            background-position: 0% center;
+        }
+        to {
+            background-position: 100% center;
+        }
+
+}
+/* TÍTULO */
+h1{
+    margin-bottom:25px;
+    color:#4f46e5;
+    text-align:center;
+}
+
+/* FORM */
+form{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    width:100%;
+    max-width:700px;
+    display:grid;
+    gap:12px;
+
+    /* RESPONSIVIDADE AUTOMÁTICA */
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+/* LABEL */
+label{
+    font-weight:600;
+    font-size:14px;
+    color:#333;
+}
+
+/* INPUTS */
+input{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:15px;
+    transition:0.25s;
+}
+
+/* EFEITO FOCUS */
+input:focus{
+    outline:none;
+    border-color:#4f46e5;
+    box-shadow:0 0 0 3px rgba(79,70,229,0.15);
+}
+
+/* LINHA HR ocupar tudo */
+hr{
+    grid-column:1/-1;
+    margin:10px 0;
+}
+
+/* BOTÃO */
+button{
+    grid-column:1/-1;
+
+    padding:14px;
+
+    border:none;
+    border-radius:5px;
+
+    background:#4f46e5;
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#4338ca;
+    border-radius: 50px;
+    transform:translateY(-2px);
+}
+
+/* MOBILE*/
+@media(max-width:500px){
+    form{
+        padding:20px;
+    }
+
+    h1{
+        font-size:22px;
+    }
+}
